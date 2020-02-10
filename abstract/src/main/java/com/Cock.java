@@ -1,14 +1,9 @@
 package com;
 
 
-public class Cock {
-
-  public double getPrice() {
-    return 5;
-  }
-
-  public String getType() {
-    return getClass().getSimpleName();
-  }
-
+public class Cock extends Chicken {
+    @Override
+    public double getPrice() {
+        return COCK_PRICE;
+    }
 }
